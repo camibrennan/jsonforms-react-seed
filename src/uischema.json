@@ -3,53 +3,48 @@
   "elements": [
     {
       "type": "Control",
-      "label": "Completed",
-      "scope": "#/properties/done"
+      "label": "Audio Received",
+      "scope": "#/properties/audio_received"
     },
     {
       "type": "Control",
-      "scope": "#/properties/name"
-    },
-    {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/due_date"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/rating"
-        }
-      ]
-    },
-    {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/recurrence"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/recurrence_interval",
-          "rule": {
-            "effect": "HIDE",
-            "condition": {
-              "type": "LEAF",
-              "scope": "#/properties/recurrence",
-              "expectedValue": "Never"
-            }
-          }
-        }
-      ]
+      "label": "Art Received",
+      "scope": "#/properties/art_received"
     },
     {
       "type": "Control",
-      "scope": "#/properties/description",
+      "label": "Customer Name",
+      "scope": "#/properties/customer_name"
+    },
+    {
+      "type": "Control",
+      "label": "Catalog Number",
+      "scope": "#/properties/catalog_number"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/artist"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/album"
+    },
+    {
+      "type": "Control",
+      "label": "Print Description",
+      "scope": "#/properties/print_description",
+      "options": {
+        "multi": true
+      }
+    },
+    {
+      "type": "Control",
+      "label": "Press Description",
+      "scope": "#/properties/print_description",
       "options": {
         "multi": true
       }
     }
+      
   ]
 }

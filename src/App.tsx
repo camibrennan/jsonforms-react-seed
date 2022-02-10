@@ -41,11 +41,14 @@ const useStyles = makeStyles({
 });
 
 const initialData = {
+  customer_name: '',
+  catalog_number:'',
   album: 'Album Name',
   artist: 'Artist Name',
-  description: 'Confirm if you have passed the subject\nHereby ...',
   art_received: true,
   audio_received: true,
+  print_description: '',
+  press_description: '',
 };
 
 const renderers = [
