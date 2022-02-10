@@ -3,7 +3,6 @@ import { JsonForms } from '@jsonforms/react';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import logo from './logo.svg';
 import './App.css';
 import schema from './schema.json';
 import uischema from './uischema.json';
@@ -42,11 +41,11 @@ const useStyles = makeStyles({
 });
 
 const initialData = {
-  name: 'Send email to Adrian',
+  album: 'Album Name',
+  artist: 'Artist Name',
   description: 'Confirm if you have passed the subject\nHereby ...',
-  done: true,
-  recurrence: 'Daily',
-  rating: 3,
+  art_received: true,
+  audio_received: true,
 };
 
 const renderers = [
@@ -68,9 +67,9 @@ const App = () => {
     <Fragment>
       <div className='App'>
         <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h1 className='App-title'>Welcome to JSON Forms with React</h1>
-          <p className='App-intro'>More Forms. Less Code.</p>
+          {/* <img src={logo} className='App-logo' alt='logo' /> */}
+          <h1 className='App-title'>Sound Performance Projects Submission Form</h1>
+          <p className='App-intro'>JSON Forms with React!</p>
         </header>
       </div>
 

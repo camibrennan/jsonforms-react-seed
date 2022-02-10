@@ -1,7 +1,11 @@
 {
   "type": "object",
   "properties": {
-    "name": {
+    "album": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artist": {
       "type": "string",
       "minLength": 1
     },
@@ -9,16 +13,15 @@
       "title": "Long Description",
       "type": "string"
     },
-    "done": {
+    "art_received": {
+      "type": "boolean"
+    },
+    "audio_received": {
       "type": "boolean"
     },
     "due_date": {
       "type": "string",
       "format": "date"
-    },
-    "rating": {
-      "type": "integer",
-      "maximum": 5
     },
     "recurrence": {
       "type": "string",
